@@ -1,0 +1,75 @@
+📘 Project Title
+Sales Dashboard and Forecasting Tool
+
+🧠 Objective
+To analyze, visualize, and forecast monthly sales performance using interactive filters and KPIs, enabling data-driven decisions for business stakeholders.
+
+📁 Dataset
+Source: Public sales dataset containing over 2,800 sales records.
+
+Key fields: ORDERDATE, SALES, PRODUCTLINE, QUANTITYORDERED, CUSTOMERNAME, YEAR_ID, MONTH_ID.
+
+🧹 Data Cleaning Summary
+Converted ORDERDATE to datetime format.
+
+Created a new YearMonth column to support time-series analysis.
+
+Removed columns with heavy missing values (ADDRESSLINE2, STATE, POSTALCODE, TERRITORY) as they were irrelevant to the business insights.
+
+Dropped duplicate records to ensure clean reporting.
+
+📊 Dashboard Features
+🔎 Filters
+Year
+
+Month
+
+Product Line
+
+🧮 KPIs
+Total Revenue (filtered)
+
+Total Orders (filtered)
+
+📈 Visualizations
+Line chart showing monthly total sales trend.
+
+Real-time updates based on sidebar selections.
+
+🔮 Forecasting Component
+Method Used:
+Exponential Smoothing (Holt-Winters)
+
+Captures both trend and seasonality
+
+Trained on historical monthly sales
+
+Output:
+Predicted next 6 months of sales based on past behavior
+
+Combined line chart showing:
+
+Actual historical sales
+
+Forecasted future sales with dashed line
+
+🛠 Tech Stack
+Python
+
+Streamlit
+
+Plotly
+
+Pandas
+
+Statsmodels
+
+📌 Key Learnings
+Built a fully functional interactive dashboard from scratch
+
+Applied classical time-series modeling for real-world business forecasting
+
+Understood how seasonal trends influence revenue
+
+Learned the importance of clean datetime features in trend analysis
+
